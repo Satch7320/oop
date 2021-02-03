@@ -80,9 +80,11 @@ class Polynomial():
         
     def __mul__(self, sec_pol):
         mul_lst = []
+
         for coeff in self.coeff_lst:
             for sec_coeff in sec_pol.coeff_lst:
                 mul_lst.append(coeff*sec_coeff)
+
         return mul_lst
 
-print(Polynomial([3,2,1]) * Polynomial([4,2]))
+print(Polynomial([0,2,3]) * Polynomial([0,5]))
